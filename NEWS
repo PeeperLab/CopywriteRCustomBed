@@ -1,0 +1,88 @@
+Changes in version 2.0.6 (2015-06-15)
+
+	o Fixed another bug resulting from checking whether all co-analyzed bams were mapped to the same reference genome
+
+-------------------------------------
+
+Changes in version 2.0.5 (2015-06-10)
+
+	o Fixed an error resulting from checking whether all co-analyzed bams were mapped to the same reference genome
+
+-------------------------------------
+
+Changes in version 2.0.4 (2015-06-05)
+
+	o Fixed an error in plotCNA leading to mixing of chromosomes during plotting
+
+-------------------------------------
+
+Changes in version 2.0.3 (2015-05-06)
+
+	o Included MAD-values in CopywriteR log file
+
+-------------------------------------
+
+Changes in version 2.0.2 (2015-04-24)
+
+	o Fixed the bug that under certain circumstances error messages are thrown that .bam files are not coordinate sorted
+
+-------------------------------------
+
+Changes in version 2.0.1 (2015-04-18)
+
+	o Implemented resetting the original work directory upon exit of CopywriteR functions
+	o Corrected R dependency to version 3.2
+	o Updated DESCRIPTION file
+	o Fixed bug resulting in failure to calculate loesses
+
+-------------------------------------
+
+RELEASE (version 2.0)
+
+-------------------------------------
+
+Changes in version 1.99.4 (2015-04-08)
+
+	o Fixed bug related to logging when .bam are not indexed
+
+-------------------------------------
+
+Changes in version 1.99.3 (2015-04-06)
+
+	o Fixed bug related to testing of sort mode of .bam files 
+
+-------------------------------------
+
+Changes in version 1.99.2 (2015-03-21)
+
+	o Provided vignette that allows R CMD CHECK --no-build-vignettes in <5 min
+	o Fixed minor bug affecting runs in which not all samples are analyzed by CopywriteR function
+	o Included a test for sorting of .bam files
+	o Improved error messages
+	o Fixed minor bug affecting plotting of samples
+	o Fixed minor bug causing error when processing >100 samples simultaneously
+	o Added support for capture regions bed files lacking the correct chromosome name prefix
+	o Fixed minor bug affecting read count statistics on single-sample analysis
+
+-------------------------------------
+
+Changes in version 1.99.0 (2015-03-05)
+
+	o Released new version
+	o Improved the speed of the package
+	o Implemented logging with the futile.logger package
+	o Replaced direct slot or field access with the use of accessor functions
+	o Implemented text wrapping
+	o Replaced the use of bed-file format with GRanges objects
+	o Created annotation and experiment packages
+	o Addressed all NOTES upon R CMD CHECK
+	o Restore options upon exit
+	o Adjusted version numbering to 1.99.0
+	o Implemented BiocParallel for parallel computing
+	o Changed name from ENCODER to CopywriteR
+	o Shortened lines to 80 characters
+	o Added NEWS file
+	o Changed F to FALSE
+	o Changed T to TRUE
+	o Added biocViews
+	o Changed version to 0.99.0

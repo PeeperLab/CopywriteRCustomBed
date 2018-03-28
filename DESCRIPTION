@@ -1,0 +1,18 @@
+Package: CopywriteRCustomBed
+Type: Package
+Title: Copy number information from ChIP_seq using off-target reads
+        off-target reads
+Version: 0.00.1
+Date: 2018-03-28
+Author: Oscar Krijgsman
+Maintainer: Oscar Krijgsman <o.krijgsman@nki.nl>
+Imports: matrixStats, gtools, data.table, S4Vectors, chipseq, IRanges,
+        Rsamtools, DNAcopy, GenomicAlignments, GenomicRanges,
+        CopyhelpeR, GenomeInfoDb, futile.logger
+Depends: R(>= 3.2), BiocParallel
+Suggests: BiocStyle, snow
+URL: https://github.com/PeeperLab/CopywriteR_CustomBed
+Description: CopywriteR extracts DNA copy number information from targeted sequencing by utiizing off-target reads. It allows for extracting uniformly distributed copy number information, can be used without reference, and can be applied to sequencing data obtained from various techniques including chromatin immunoprecipitation and target enrichment on small gene panels. Thereby, CopywriteR constitutes a widely applicable alternative to available copy number detection tools. *** The version of CopywriteR "CopywriteR_CustomBed" is a custom version of CopywriteR that allows users to use their own bed files with the identified peak regions instead of using the algorithm in CopywriteR. 
+License: GPL-2
+biocViews: TargetedResequencing, ExomeSeq, CopyNumberVariation,
+        Preprocessing, Visualization, Coverage
